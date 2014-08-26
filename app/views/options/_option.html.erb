@@ -1,0 +1,9 @@
+<div class="location">
+  <h1><%= option[:location] %></h1>
+  <% if(option[:gold_min] < 0) %>
+    <p>(earns/loses 0-<%= option[:gold_max] %> gold))</p>
+  <% else %>
+    <p>(earns <%= option[:gold_min] %>-<%= option[:gold_max] %> gold)</p>
+  <% end %>
+  <%= link_to 'Find Gold!', pilfer_path(option[:location]) %>
+</div>

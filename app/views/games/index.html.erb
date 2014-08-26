@@ -1,0 +1,16 @@
+<h1>Your Gold: <span id="gold"><%= session[:gold] %></span></h1>
+<% if flash[:error] %>
+  <h3 class="lose"><%= flash[:error] %></h3>
+<% end %>
+<div class="wrapper">
+  <%= render @options %>
+</div>
+<h3>Activities:</h3>
+<div class="wrapper">
+  <div id="activity_log">
+    <div id="log">
+      <%= render @activities %>
+    </div>
+  </div>
+</div>
+<%= link_to "RESET", reset_path %>

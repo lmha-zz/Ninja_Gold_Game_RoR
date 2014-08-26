@@ -1,0 +1,49 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+.wrapper {
+	text-align: center;
+}
+.location {
+	border: 1px solid black;
+	text-align: center;
+	padding: 20px 0 40px 0;
+	margin-right:2%;
+	width: 20%;
+	display: inline-block;
+}
+.location:last-child {
+	margin-right: 0;
+}
+.earn {
+	color:green;
+}
+.lose {
+	color:red;
+}
+#gold {
+	border:1px solid black;
+	padding:10px 30px;
+}
+#activity_log {
+	border:1px solid black;
+	height: 200px;
+	width: 90%;
+	margin: 0px auto;
+	overflow: auto;
+}
+#log {
+	padding: 10px 30px;
+}

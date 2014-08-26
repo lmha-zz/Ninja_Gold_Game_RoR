@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  gold: 1
+  location: MyString
+  flag: false
+
+two:
+  gold: 1
+  location: MyString
+  flag: false
